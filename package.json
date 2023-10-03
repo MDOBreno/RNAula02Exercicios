@@ -9,7 +9,7 @@
     "test": "jest",
     "lint": "eslint .",
     "start": "react-scripts --openssl-legacy-provider start",
-    "launch-ios": "npm run ios -- --simulator=\"iPhone 14\""
+    "launch-ios": "npm run ios -- --simulator=\"iPhone SE (3rd generation)\""
   },
   "dependencies": {
     "react": "16.13.1",
