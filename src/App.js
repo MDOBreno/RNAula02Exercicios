@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, SafeAreaView } from 'react-native'
+import { View, SafeAreaView, StyleSheet } from 'react-native'
 
 //Forma de escrever 01
 /* function App() {
@@ -22,8 +22,8 @@ import Primeiro from './componentes/Primeiro'
 
 
 export default ()=> (
-    <SafeAreaView>
-        <View>
+    <SafeAreaView style={style.App}>
+        {/* <View> */}
             <CompPadrao />
             <Comp1/>
             <Comp2/>
@@ -31,6 +31,16 @@ export default ()=> (
             <Primeiro/>
 
             {/* <Text>{1+1}</Text> */}
-        </View>
+        {/* </View> */}
     </SafeAreaView>
 )    
+
+const style = StyleSheet.create({
+        App: {
+            // backgroundColor: '#A00',
+            flexGrow: 1,
+            justifyContent: "center",
+            alignItems: "center"
+        }
+    }
+)
