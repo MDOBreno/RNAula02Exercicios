@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, SafeAreaView } from 'react-native'
+import { View, SafeAreaView } from 'react-native'
 
 //Forma de escrever 01
 /* function App() {
@@ -15,16 +15,22 @@ export default App */
 //                     </SafeAreaView>
 
 
-import { View } from 'react-native'
-
+//Reparar que quando importamos dando um nome qualquer(Ex: X) ele importa com a funcao/constante default, 
+// ja com {} tem que ser o nome exato
+import CompPadrao, { Comp1, Comp2 } from './componentes/Multi'
 import Primeiro from './componentes/Primeiro'
 
 
 export default ()=> (
     <SafeAreaView>
         <View>
-            {/* <Text>{1+1}</Text> */}
+            <CompPadrao />
+            <Comp1/>
+            <Comp2/>
+
             <Primeiro/>
+
+            {/* <Text>{1+1}</Text> */}
         </View>
     </SafeAreaView>
 )    
