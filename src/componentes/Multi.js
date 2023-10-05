@@ -14,7 +14,7 @@ import estilo from './estilo'
 
 //Formato 2 de Definir um componente padrão para exportação: Sem precisar colocar a exportação em cada uma das funções 
 function Comp() {
-    return <Text style={estilo.fontG}>Comp #Oficial</Text>
+    return <Text style={estilo.txtG}>Comp #Oficial</Text>
 }
 export default Comp
 
@@ -37,9 +37,9 @@ export function Comp2() {
 
 //Formato 3: Sem precisar colocar a exportação em cada uma das funções 
 function Comp1() {
-    return <Text style={estilo.fontG}>Comp #01</Text>
+    return <Text style={estilo.txtG}>Comp #01</Text>
 }
 function Comp2() {
-    return <Text style={estilo.fontG}>Comp #02</Text>
+    return <Text style={estilo.txtG}>Comp #02</Text>
 }
 export { Comp1, Comp2 }

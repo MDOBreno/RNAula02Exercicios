@@ -14,21 +14,24 @@ export default App */
 //                         <Text>Primeiro Componente!!!</Text>
 //                     </SafeAreaView>
 
+import MinMax from './componentes/MinMax'
 
 //Reparar que quando importamos dando um nome qualquer(Ex: X) ele importa com a funcao/constante default, 
 // ja com {} tem que ser o nome exato
-import CompPadrao, { Comp1, Comp2 } from './componentes/Multi'
-import Primeiro from './componentes/Primeiro'
+// import CompPadrao, { Comp1, Comp2 } from './componentes/Multi'
+// import Primeiro from './componentes/Primeiro'
 
 
 export default ()=> (
     <SafeAreaView style={style.App}>
         {/* <View> */}
-            <CompPadrao />
-            <Comp1/>
-            <Comp2/>
+            <MinMax min={3} max={20}/>
+            <MinMax min={1} max={94}/>
+            {/* <CompPadrao />
+            <Comp1 />
+            <Comp2 />
 
-            <Primeiro/>
+            <Primeiro /> */}
 
             {/* <Text>{1+1}</Text> */}
         {/* </View> */}
@@ -40,7 +43,8 @@ const style = StyleSheet.create({
             // backgroundColor: '#A00',
             flexGrow: 1,
             justifyContent: "center",
-            alignItems: "center"
+            alignItems: "center",
+            padding: 20,
         }
     }
 )
