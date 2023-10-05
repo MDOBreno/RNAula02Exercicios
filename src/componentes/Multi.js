@@ -1,6 +1,5 @@
 import React from 'react'
 import { Text, SafeAreaView } from 'react-native'
-import Estilo from './estilo'
 import estilo from './estilo'
 
 // esse aqui é uma aula sobre o sistema de módulos do EcmaScript6
