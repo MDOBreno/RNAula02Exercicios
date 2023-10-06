@@ -14,7 +14,8 @@ export default App */
 //                         <Text>Primeiro Componente!!!</Text>
 //                     </SafeAreaView>
 
-import Aleatorio from './componentes/Aleatorio'
+import Titulo from './componentes/Titulo'
+// import Aleatorio from './componentes/Aleatorio'
 // import MinMax from './componentes/MinMax'
 
 //Reparar que quando importamos dando um nome qualquer(Ex: X) ele importa com a funcao/constante default, 
@@ -26,12 +27,14 @@ import Aleatorio from './componentes/Aleatorio'
 export default ()=> (
     <SafeAreaView style={style.App}>
         {/* <View> */}
+            <Titulo principal="Cadastro Produto"
+                    secundario="Tela de cadastro do produto" />
+            {/* <Aleatorio min={1} max={60}/>
             <Aleatorio min={1} max={60}/>
             <Aleatorio min={1} max={60}/>
             <Aleatorio min={1} max={60}/>
             <Aleatorio min={1} max={60}/>
-            <Aleatorio min={1} max={60}/>
-            <Aleatorio min={1} max={60}/>
+            <Aleatorio min={1} max={60}/> */}
             {/* <MinMax min={3} max={20}/>
             <MinMax min={1} max={94}/>
             <CompPadrao />
