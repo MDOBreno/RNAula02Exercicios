@@ -20,5 +20,14 @@ const p2 =new Produto2('Caderno')
 
 const props = { min:1, max: 60 }
 const { min, max } = props
-console.log(min)
-console.log(max)
+// console.log(min)
+// console.log(max)
+
+//Obs: reparar que é mesmo definindo com "let"("variável") , o Object.freeze() tratar ele como 'constante'('congelado'):
+let props1 = Object.freeze({min1: 1, max1:60 })
+props1.min1 += 1000
+console.log(props1.min1)
+// mas quando eu criar uma variável recebendo este valor posso alterar "Essa cópia" a vontade:
+let {min1} = props1
+min1 += 1000
+console.log(min1)
