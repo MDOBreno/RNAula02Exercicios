@@ -14,7 +14,8 @@ export default App */
 //                         <Text>Primeiro Componente!!!</Text>
 //                     </SafeAreaView>
 
-import Botao from './componentes/Botao'
+import Contador from './componentes/Contador'
+// import Botao from './componentes/Botao'
 // import Titulo from './componentes/Titulo'
 // import Aleatorio from './componentes/Aleatorio'
 // import MinMax from './componentes/MinMax'
@@ -28,8 +29,10 @@ import Botao from './componentes/Botao'
 export default ()=> (
     <SafeAreaView style={style.App}>
         {/* <View> */}
-            <Botao />
+            <Contador inicial={100} passo={13} />
+            <Contador />
             {/* 
+            <Botao />
             <Titulo principal="Cadastro Produto"
                     secundario="Tela de cadastro do produto" />
             <Aleatorio min={1} max={60}/>
@@ -38,14 +41,14 @@ export default ()=> (
             <Aleatorio min={1} max={60}/>
             <Aleatorio min={1} max={60}/>
             <Aleatorio min={1} max={60}/> 
-            */}
-            {/* <MinMax min={3} max={20}/>
+            <MinMax min={3} max={20}/>
             <MinMax min={1} max={94}/>
             <CompPadrao />
             <Comp1 />
             <Comp2 />
 
-            <Primeiro /> */}
+            <Primeiro /> 
+            */}
 
             {/* <Text>{1+1}</Text> */}
         {/* </View> */}

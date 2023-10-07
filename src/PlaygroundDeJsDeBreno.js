@@ -26,8 +26,23 @@ const { min, max } = props
 //Obs: reparar que é mesmo definindo com "let"("variável") , o Object.freeze() tratar ele como 'constante'('congelado'):
 let props1 = Object.freeze({min1: 1, max1:60 })
 props1.min1 += 1000
-console.log(props1.min1)
+// console.log(props1.min1)
 // mas quando eu criar uma variável recebendo este valor posso alterar "Essa cópia" a vontade:
 let {min1} = props1
 min1 += 1000
-console.log(min1)
+// console.log(min1)
+
+function useState(inicial) {
+    return (
+        [inicial, function() {
+            console.log('chamou')
+        }]
+    )
+} 
+const array = useState(10)
+console.log(array[0])
+array[1]()
+const [valor, setValor] = useState('teste')
+console.log(valor)
+setValor()
+
