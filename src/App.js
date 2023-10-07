@@ -14,7 +14,8 @@ export default App */
 //                         <Text>Primeiro Componente!!!</Text>
 //                     </SafeAreaView>
 
-import Contador from './componentes/Contador'
+import Pai from './componentes/direta/Pai'
+// import Contador from './componentes/Contador'
 // import Botao from './componentes/Botao'
 // import Titulo from './componentes/Titulo'
 // import Aleatorio from './componentes/Aleatorio'
@@ -29,9 +30,10 @@ import Contador from './componentes/Contador'
 export default ()=> (
     <SafeAreaView style={style.App}>
         {/* <View> */}
+            <Pai />
+            {/* 
             <Contador inicial={100} passo={13} />
             <Contador />
-            {/* 
             <Botao />
             <Titulo principal="Cadastro Produto"
                     secundario="Tela de cadastro do produto" />
