@@ -14,7 +14,8 @@ export default App */
 //                         <Text>Primeiro Componente!!!</Text>
 //                     </SafeAreaView>
 
-import Pai from './componentes/direta/Pai'
+import Pai from './componentes/indireta/Pai'
+// import Pai from './componentes/direta/Pai'
 // import Contador from './componentes/Contador'
 // import Botao from './componentes/Botao'
 // import Titulo from './componentes/Titulo'
@@ -32,6 +33,7 @@ export default ()=> (
         {/* <View> */}
             <Pai />
             {/* 
+            <Pai />
             <Contador inicial={100} passo={13} />
             <Contador />
             <Botao />
