@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, SafeAreaView, StyleSheet } from 'react-native'
+import { SafeAreaView, StyleSheet } from 'react-native'
 
 //Forma de escrever 01
 /* function App() {
@@ -14,7 +14,8 @@ export default App */
 //                         <Text>Primeiro Componente!!!</Text>
 //                     </SafeAreaView>
 
-import Diferenciar from './componentes/Diferenciar'
+import ParImpar from './componentes/ParImpar'
+// import Diferenciar from './componentes/Diferenciar'
 // import ContadorV2 from './componentes/contador/ContadorV2'
 // import Pai from './componentes/indireta/Pai'
 // import Pai from './componentes/direta/Pai'
@@ -32,34 +33,33 @@ import Diferenciar from './componentes/Diferenciar'
 
 export default ()=> (
     <SafeAreaView style={style.App}>
-        {/* <View> */}
-            <Diferenciar />
-            {/* 
-            <ContadorV2 />
-            <Pai />
-            <Pai />
-            <Contador inicial={100} passo={13} />
-            <Contador />
-            <Botao />
-            <Titulo principal="Cadastro Produto"
-                    secundario="Tela de cadastro do produto" />
-            <Aleatorio min={1} max={60}/>
-            <Aleatorio min={1} max={60}/>
-            <Aleatorio min={1} max={60}/>
-            <Aleatorio min={1} max={60}/>
-            <Aleatorio min={1} max={60}/>
-            <Aleatorio min={1} max={60}/> 
-            <MinMax min={3} max={20}/>
-            <MinMax min={1} max={94}/>
-            <CompPadrao />
-            <Comp1 />
-            <Comp2 />
+        <ParImpar num={2} />
+        {/* 
+        <Diferenciar />
+        <ContadorV2 />
+        <Pai />
+        <Pai />
+        <Contador inicial={100} passo={13} />
+        <Contador />
+        <Botao />
+        <Titulo principal="Cadastro Produto"
+                secundario="Tela de cadastro do produto" />
+        <Aleatorio min={1} max={60}/>
+        <Aleatorio min={1} max={60}/>
+        <Aleatorio min={1} max={60}/>
+        <Aleatorio min={1} max={60}/>
+        <Aleatorio min={1} max={60}/>
+        <Aleatorio min={1} max={60}/> 
+        <MinMax min={3} max={20}/>
+        <MinMax min={1} max={94}/>
+        <CompPadrao />
+        <Comp1 />
+        <Comp2 />
 
-            <Primeiro /> 
-            */}
+        <Primeiro /> 
+        */}
 
-            {/* <Text>{1+1}</Text> */}
-        {/* </View> */}
+        {/* <Text>{1+1}</Text> */}
     </SafeAreaView>
 )    
 
