@@ -14,7 +14,9 @@ export default App */
 //                         <Text>Primeiro Componente!!!</Text>
 //                     </SafeAreaView>
 
-import ParImpar from './componentes/ParImpar'
+import Familia from './componentes/relacao/Familia'
+import Membro from './componentes/relacao/Membro'
+// import ParImpar from './componentes/ParImpar'
 // import Diferenciar from './componentes/Diferenciar'
 // import ContadorV2 from './componentes/contador/ContadorV2'
 // import Pai from './componentes/indireta/Pai'
@@ -33,8 +35,18 @@ import ParImpar from './componentes/ParImpar'
 
 export default ()=> (
     <SafeAreaView style={style.App}>
-        <ParImpar num={2} />
+        <Familia>
+            <Membro nome="Bia" sobrenome="Arruda" />
+            <Membro nome="Carlos" sobrenome="Arruda" />
+        </Familia>
+        <Familia>
+            <Membro nome="Ana" sobrenome="Silva" />
+            <Membro nome="Julia" sobrenome="Silva" />
+            <Membro nome="Gui" sobrenome="Silva" />
+            <Membro nome="Rebeca" sobrenome="Silva" />
+        </Familia>
         {/* 
+        <ParImpar num={2} />
         <Diferenciar />
         <ContadorV2 />
         <Pai />
