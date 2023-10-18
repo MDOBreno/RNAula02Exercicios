@@ -9,6 +9,7 @@ export default class Mega extends Component {
         return (
             <Text style={Estilo.txtG} >
                 Gerador de Mega-Sena
+                {this.props.qtdeNumeros}
             </Text>
         )
     }
