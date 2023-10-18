@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, TextInput }from 'react-native'
+import { Text, TextInput, Button }from 'react-native'
 import Estilo from '../estilo'
 
 export default class Mega extends Component {
@@ -19,7 +19,8 @@ export default class Mega extends Component {
     
     // Forma 2de2 de Criar estado:
     state = {
-        qtdeNumeros: this.props.qtdeNumeros
+        qtdeNumeros: this.props.qtdeNumeros,
+        numeros: []
     }
 
     //Forma [2de3 Parte1de2] de usar a onChangeText:
@@ -29,7 +30,23 @@ export default class Mega extends Component {
 
     //Forma [3de3 Parte1de2] de usar a onChangeText:
     alterarQtdeNumero = (qtde) => {
-        this.setState({qtdeNumeros: qtde})
+        this.setState({qtdeNumeros: +qtde})
+    }
+
+    gerarNumeroNaoContido = nums => {
+        const novo = parseInt(Math.random() * 60) + 1
+        return nums.includes(novo) ? this.gerarNumeroNaoContido(nums) : novo
+    }
+
+    gerarNumeros = () => {
+        const numeros = Array(this.state.qtdeNumeros)
+            .fill()
+            .reduce(
+                n => [...n, this.gerarNumeroNaoContido(n)], 
+                []
+            )
+            .sort((a, b) => a-b)
+        this.setState({numeros})
     }
 
     render() {
@@ -38,7 +55,6 @@ export default class Mega extends Component {
             <>
                 <Text style={Estilo.txtG} >
                     Gerador de Mega-Sena
-                    {this.state.qtdeNumeros}
                 </Text>
                 <TextInput 
                     keyboardType={'numeric'}
@@ -48,7 +64,7 @@ export default class Mega extends Component {
                         }
                     }
                     placeholder='Qtde de números'
-                    value={this.state.qtdeNumeros}
+                    value={`${this.state.qtdeNumeros}`}
 
                     //Forma [1de3 Parte2de2] e [2de3 Parte2de2] de usar a onChangeText:
                     // onChangeText={qtde => this.alterarQtdeNumero(qtde)}
@@ -56,6 +72,13 @@ export default class Mega extends Component {
                     //Forma [3de3 Parte2de2] de usar a onChangeText:
                     onChangeText={this.alterarQtdeNumero}
                 />
+                <Button 
+                    title='Gerar'
+                    onPress={this.gerarNumeros}
+                />
+                <Text>
+                    {this.state.numeros.join(',')}
+                </Text>
             </>
         )
     }

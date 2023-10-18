@@ -2,7 +2,7 @@
 // console.log('teste')
 
 class Produto {}
-console.log("Em js uma classe é na verdade o tipo: " + typeof Produto)
+// console.log("Em js uma classe é na verdade o tipo: " + typeof Produto)
 
 // Faca testes em JS salvando esse arquivo e depois:     Control+Alt+'N'   , e o resultado é exibido na SAIDA , Graças a extensão do VC Code chamada de "Code runner"
 
@@ -39,10 +39,17 @@ function useState(inicial) {
         }]
     )
 } 
-const array = useState(10)
-console.log(array[0])
-array[1]()
-const [valor, setValor] = useState('teste')
-console.log(valor)
-setValor()
+// const array = useState(10)
+// console.log(array[0])
+// array[1]()
+// const [valor, setValor] = useState('teste')
+// console.log(valor)
+// setValor()
 
+
+console.log(11    + " " + typeof(11))
+console.log('11'  + " " + typeof('11'))
+console.log(+'11' + " " + typeof(+'11')) // Colocar um '+' na frente de uma string transforma-o em tipo numerico 
+
+console.log(Array(3).fill())
+console.log(Array(3).fill().reduce(() => console.log('Epa'), []))
