@@ -14,7 +14,7 @@ export default App */
 //                         <Text>Primeiro Componente!!!</Text>
 //                     </SafeAreaView>
 
-import Quadrado from './componentes/layout/Quadrado'
+import FlexboxV1 from './componentes/layout/FlexboxV1'
 // import DigiteSeuNome from './componentes/DigiteSeuNome'
 // import ListaProdutosV2 from './componentes/produtos/ListaProdutosV2'
 // import ListaProdutos from './componentes/produtos/ListaProdutos'
@@ -40,10 +40,7 @@ import Quadrado from './componentes/layout/Quadrado'
 
 export default ()=> (
     <SafeAreaView style={style.App}>
-        <Quadrado />
-        <Quadrado cor='#900' />
-        <Quadrado cor='#090' />
-        <Quadrado cor='#009' />
+        <FlexboxV1 />
         {/* 
         <DigiteSeuNome />
         <ListaProdutosV2 />
