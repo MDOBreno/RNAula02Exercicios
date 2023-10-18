@@ -14,7 +14,8 @@ export default App */
 //                         <Text>Primeiro Componente!!!</Text>
 //                     </SafeAreaView>
 
-import UsuarioLogado from './componentes/UsuarioLogado'
+import ListaProdutos from './componentes/produtos/ListaProdutos'
+// import UsuarioLogado from './componentes/UsuarioLogado'
 // import Familia from './componentes/relacao/Familia'
 // import Membro from './componentes/relacao/Membro'
 // import ParImpar from './componentes/ParImpar'
@@ -36,12 +37,13 @@ import UsuarioLogado from './componentes/UsuarioLogado'
 
 export default ()=> (
     <SafeAreaView style={style.App}>
+        <ListaProdutos />
+        {/* 
         <UsuarioLogado usuario={  {nome: 'Gui', email: 'gui@gui.com'}  } />
         <UsuarioLogado usuario={  {nome: 'Ana'}  } />
         <UsuarioLogado usuario={  {email: 'carlos@empresa.com'}  } />
         <UsuarioLogado usuario={  null  } />
-        <UsuarioLogado usuario={  {}} />
-        {/* 
+        <UsuarioLogado usuario={  {}  } />
         <Familia>
             <Membro nome="Bia" sobrenome="Arruda" />
             <Membro nome="Carlos" sobrenome="Arruda" />
