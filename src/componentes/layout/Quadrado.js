@@ -4,7 +4,7 @@ import { SafeAreaView, Text } from 'react-native'
 
 
 export default props => {
-    const lado = 50
+    const lado = props.lado || 50
     
     return (
         <SafeAreaView 

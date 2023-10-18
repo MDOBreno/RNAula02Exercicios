@@ -14,7 +14,8 @@ export default App */
 //                         <Text>Primeiro Componente!!!</Text>
 //                     </SafeAreaView>
 
-import FlexboxV2 from './componentes/layout/FlexboxV2'
+import FlexboxV3 from './componentes/layout/FlexboxV3'
+// import FlexboxV2 from './componentes/layout/FlexboxV2'
 // import FlexboxV1 from './componentes/layout/FlexboxV1'
 // import DigiteSeuNome from './componentes/DigiteSeuNome'
 // import ListaProdutosV2 from './componentes/produtos/ListaProdutosV2'
@@ -41,8 +42,9 @@ import FlexboxV2 from './componentes/layout/FlexboxV2'
 
 export default ()=> (
     <SafeAreaView style={style.App}>
-        <FlexboxV2 />
+        <FlexboxV3 />
         {/* 
+        <FlexboxV2 />
         <FlexboxV1 />
         <DigiteSeuNome />
         <ListaProdutosV2 />
