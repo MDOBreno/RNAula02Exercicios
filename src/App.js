@@ -14,7 +14,8 @@ export default App */
 //                         <Text>Primeiro Componente!!!</Text>
 //                     </SafeAreaView>
 
-import DigiteSeuNome from './componentes/DigiteSeuNome'
+import Quadrado from './componentes/layout/Quadrado'
+// import DigiteSeuNome from './componentes/DigiteSeuNome'
 // import ListaProdutosV2 from './componentes/produtos/ListaProdutosV2'
 // import ListaProdutos from './componentes/produtos/ListaProdutos'
 // import UsuarioLogado from './componentes/UsuarioLogado'
@@ -39,8 +40,12 @@ import DigiteSeuNome from './componentes/DigiteSeuNome'
 
 export default ()=> (
     <SafeAreaView style={style.App}>
-        <DigiteSeuNome />
+        <Quadrado />
+        <Quadrado cor='#900' />
+        <Quadrado cor='#090' />
+        <Quadrado cor='#009' />
         {/* 
+        <DigiteSeuNome />
         <ListaProdutosV2 />
         <ListaProdutos />
         <UsuarioLogado usuario={  {nome: 'Gui', email: 'gui@gui.com'}  } />
